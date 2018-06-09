@@ -18,6 +18,6 @@ $consulta="INSERT INTO hotel set Name='$nombre',Description='$descripcion', Phon
 
 $resutlado=mysqli_query($conexion,$consulta);
 
-header('location: hoteles.php?status=6');
+header('location: hoteles.php?city='.$id_city.'');
 
 ?>
