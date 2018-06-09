@@ -26,8 +26,8 @@ include "conexion.php";
 			Seleccione una ciudad y continuar
 		</label>
 	</h2>
-	<form action="hoteles.php" action="POST">
-		<select name="City">
+	<form action="hoteles.php" method="GET">
+		<select name="city">
 			<?php
 	            while($resultados_citys=mysqli_fetch_assoc($resutlado_city)){
 	        ?>
@@ -39,7 +39,7 @@ include "conexion.php";
 	        ?>
 		</select>
 		<br><br>
-	
+		
 		<input type="submit" value="Continuar">
 	</form>
 </center>
