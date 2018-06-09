@@ -66,6 +66,8 @@ include "conexion.php";
 		echo "</TABLE>";
 	?>
 
-<input type="button" onclick=location.href='index.php' value="Home"  />
+	<center>
+		<input type="button" onclick=location.href='index.php' value="Home"  />
+	</center>
 </body>
 </html>

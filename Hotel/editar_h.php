@@ -47,6 +47,8 @@ $con="SELECT * FROM hotel WHERE Id='$id_h'";
 		<br><br>
 		<input type="submit" value="ACTUALIZAR">
 	</form>
-<input type="button" onclick=location.href='index.php' value="Home"  />
+	<center>
+		<input type="button" onclick=location.href='index.php' value="Home"  />
+	</center>
 </body>
 </html>

@@ -30,7 +30,7 @@ include "conexion.php";
 		<TH WIDTH=10%>CODIGO</TH>
 		<TH WIDTH=20%>NOMBRE</TH>
 		<TH WIDTH=35%>DESCRIPCIÓN</TH>
-		<TH WIDTH=35%>TELEFONO</TH>
+		<TH WIDTH=10%>TELEFONO</TH>
 		<TH WIDTH=35%>DIRECCIÓN</TH>
 		<TH WIDTH=25%>IMAGEN</TH>
 		<TH WIDTH=35%>INSPECCIONAR</TH>
@@ -42,7 +42,7 @@ include "conexion.php";
 		<TD WIDTH=10%> $row[Id]</TD>
 		<TD WIDTH=20%> $row[Name]</TD>
 		<TD WIDTH=35%> $row[Description]</TD>
-		<TD WIDTH=35%> $row[Phone]</TD>
+		<TD WIDTH=10%> $row[Phone]</TD>
 		<TD WIDTH=35%> $row[Address]</TD>
 		<TD><img align='middle'src='descargarimagen.php?Id=".$row["Id"]."'width='200' height='200'></TD>
 		<TD WIDTH=35%>
@@ -58,6 +58,8 @@ include "conexion.php";
 		echo "</TABLE>";
 	?>
 
-<input type="button" onclick=location.href='index.php' value="Home"  />
+	<center>
+		<input type="button" onclick=location.href='index.php' value="Home"  />
+	</center>
 </body>
 </html>
