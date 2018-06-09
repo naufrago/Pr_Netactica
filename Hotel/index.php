@@ -16,7 +16,7 @@ include "conexion.php";
 	<h1>
 		<label>
 		Bienvenido al panel de administración de hoteles<br>
-	 	selecciona la ciudad deseada.
+	 	selecciona la ciudad deseada o agregala para Habilitarla en la lista desplegable.
 	 	</label>
 	</h1>
 	<img src="Imag/cadena.jpg"  />
@@ -38,10 +38,17 @@ include "conexion.php";
 	            }
 	        ?>
 		</select>
-		<br><br>
+		<br>
 		
-		<input type="submit" value="Continuar">
+		<input type="submit" value="Continuar"><br><br>
 	</form>
+
+	<form action="agregar_c.php" method="POST">
+		<label><b>Ingrese la nueva ciudad</b></label>
+		<input type="text" name="ciudad">
+		<input type="submit" value="AGREGAR CIUDAD">
+	</form>
+	
 </center>
 
 
