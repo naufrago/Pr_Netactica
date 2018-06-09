@@ -40,7 +40,7 @@ function crear_array(a) {
 		array=y;
 		can=array.length;
 	}
-	document.writeln("<br><h1>Ratiorg  pose estas estatuas con estos tamaños "+array +" </h1>");
+	document.writeln("<br><h1>Ratiorg  pose "+can+"  estatuas con estos tamaños "+array +" </h1>");
 
 	var array_n=ordenado(array);
 	//document.writeln("<br>nuevo"+ array_n);
@@ -62,8 +62,9 @@ function crear_array(a) {
 		}
 		
 	}
-	document.writeln("<br><h2>debera consegur o comprar estatuas de estos tamaños "+ comprar+" </h2>");
-	document.writeln("<br><h2>y podra tener su coleccion ordenada de menor a mayor la altura de sus estatuas "+ estatuas+" </h2>");
+	total=parseInt(adicio)+parseInt(can);
+	document.writeln("<br><h2>debera consegur o comprar "+adicio+" estatuas de estos tamaños "+ comprar+" </h2>");
+	document.writeln("<br><h2>y podra tener su coleccion de "+total+" ordenada de menor a mayor la altura de sus estatuas "+ estatuas+" </h2>");
 	
     
 
