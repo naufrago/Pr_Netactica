@@ -46,7 +46,7 @@ include "conexion.php";
 		<TD WIDTH=35%> $row[Address]</TD>
 		<TD><img align='middle'src='descargarimagen.php?Id=".$row["Id"]."'width='200' height='200'></TD>
 		<TD WIDTH=35%>
-			<input type=button onclick=location.href='hotel.php?id_c=".$ciudad."&id_h=".$row["Id"]."' value=IR  />
+			<input type=button onclick=location.href='rooms.php?ht=".$n_ciudad."&id_h=".$row["Id"]."' value=IR  />
 			<input type=button onclick=location.href='editar_h.php?id_c=".$ciudad."&id_h=".$row["Id"]."' value=Editar  />
 			<input type=button onclick=location.href='eliminar_h.php?id_c=".$ciudad."&id_h=".$row["Id"]."' value=Eliminar  />
 		</TD>
