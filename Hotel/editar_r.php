@@ -54,6 +54,6 @@ $con="SELECT * FROM room WHERE Id='$id_r'";
 		<br><br>
 		<input type="submit" value="ACTUALIZAR">
 	</form>
-
+<input type="button" onclick=location.href='index.php' value="Home"  />
 </body>
 </html>

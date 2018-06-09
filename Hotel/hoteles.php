@@ -57,5 +57,7 @@ include "conexion.php";
 			//Cerrar la tabla
 		echo "</TABLE>";
 	?>
+
+<input type="button" onclick=location.href='index.php' value="Home"  />
 </body>
 </html>

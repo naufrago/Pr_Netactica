@@ -47,6 +47,6 @@ include "conexion.php";
 		<input type="submit" value="AGREGAR">
 	</form>
 	
-
+<input type="button" onclick=location.href='index.php' value="Home"  />
 </body>
 </html>
