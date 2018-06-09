@@ -2,7 +2,7 @@
 <html lang="es">
 <html>
 <head>
-	<title>LISTADO DE HOTELES</title>
+	<title>LISTADO DE CUARTOS</title>
 </head>
 <?php 
 //conexion con la base de datos
@@ -12,7 +12,7 @@ include "conexion.php";
 	$con="SELECT Name FROM hotel WHERE Id='$id_h'";
 	$res=mysqli_query($conexion,$con);
 	$roww = mysqli_fetch_assoc($res);
-	$n_=$roww["Name"];
+	$no_=$roww["Name"];
 	
 
 	$consulta="SELECT *  FROM room WHERE IdHotel='$id_h' and Estado='1'";
@@ -20,7 +20,7 @@ include "conexion.php";
 
 ?>
 <body>
-	<h1>Los Cuartos disponibles en el <?php echo " ",$n_." de la ciudad de ".$Hotel." ";?>son</h1><br><br>
+	<h1>Los Cuartos disponibles en el <?php echo " ",$no_." de la ciudad de ".$Hotel." ";?>son</h1><br><br>
 	<div>
 		<label><h2>Desea agregar un nuevo cuarto al Hotel?</h2></label>
 		<input type="button" onclick=location.href="agregar_r.php?id_h=<?php echo $id_h;?>" value="AGREGAR"  />
@@ -55,8 +55,8 @@ include "conexion.php";
 		<TD WIDTH=15%> ".$tipos."</TD>
 		<TD><img align='middle'src='descargarimagen1.php?Id=".$row["Id"]."'width='200' height='200'></TD>
 		<TD WIDTH=10%>
-			<input type=button onclick=location.href='editar_r.php?id_c=".$ciudad."&id_h=".$row["Id"]."' value=Editar  />
-			<input type=button onclick=location.href='eliminar_r.php?id_c=".$ciudad."&id_h=".$row["Id"]."' value=Eliminar  />
+			<input type=button onclick=location.href='editar_r.php?id_r=".$row['Id']."&id_h=".$id_h."&n_h=". $Hotel."' value=Editar  />
+			<input type=button onclick=location.href='eliminar_r.php?id_h=".$id_h."&id_r=".$row["IdHotel"]."' value=Eliminar  />
 		</TD>
 		
 		</TR>";
